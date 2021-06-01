@@ -79,9 +79,10 @@ end
 
 -- blend images using various methods
 local base_file = files[1]
-local output = make_output_name(base_file, "-blend.jpg")
-enfuse(image_files, {}, output)
-enfuse(image_files, {hard_mask=""}, make_output_name(base_file, "-soft.jpg"))
+-- luminance seems to work best
+-- local output = make_output_name(base_file, "-blend.jpg")
+-- enfuse(image_files, {}, output)
+-- enfuse(image_files, {hard_mask=""}, make_output_name(base_file, "-soft.jpg"))
 enfuse(image_files, {gray_projector="luminance"}, make_output_name(base_file, "-luminance.jpg"))
 
 
