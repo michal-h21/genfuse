@@ -5,4 +5,6 @@ This script will blend exposures for images selected in Nautilus.  Run `make ins
 ## Dependencies
 
 - Hugin
-- Enblend
+- Enblend / [Details about blending](http://enblend.sourceforge.net/enfuse.doc/enfuse_4.2.xhtml/enfuse.html#sec%3Aexposure-series--dynamic-range-increase)
+
+
